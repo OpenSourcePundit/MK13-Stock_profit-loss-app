@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7e00d5f81a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Stock-check</title>
 </head>
 <body>
-    <h1>Stock Profit and Loss Calculator</h1>
-    <div class="mainBlock">
+    <h1 class="nav-brand navigation">Stock Profit and Loss Calculator</h1>
+    <div class="mainBlock"  style="max-width: fit-content;margin: auto;margin-top: 2rem;">
         <label for="initial-price">Initial Price</label>
         <input class="input" type="Number" id="initial-price" placeholder="Give initial price of stock">
         <label for="Qty-of-stocks">Quantity of Stocks</label>
@@ -20,15 +21,17 @@
         <div class="output" id="outputBox"></div>
     </div>
 
-    <footer>
+    <footer style="text-align:center;">    
         <p>©|2022| opensourcepundit| <a href="https://opensourcepundit.netlify.app/index.html"><i class="fa-solid fa-diagram-project"></i></a></p>
-        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://github.com/OpenSourcePundit"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/shashank_00098/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/shashank-kumar-2a4b2b87/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://t.me/OpenSourcePundit"><i class="fa-brands fa-telegram"></i></a>
-</footer>
+        <div style="padding:.5rem;">
+            <a style="padding:.5rem;"href="https://twitter.com/home"><i class="fa-brands fa-twitter icon-large"></i></a>
+            <a style="padding:.5rem;"href="https://discord.com/channels/@me"><i class="fa-brands fa-discord icon-large"></i></a>
+            <a style="padding:.5rem;"href="https://github.com/OpenSourcePundit"><i class="fa-brands fa-github icon-large"></i></a>
+            <a style="padding:.5rem;"href="https://www.instagram.com/shashank_00098/"><i class="fa-brands fa-instagram icon-large"></i></a>
+            <a style="padding:.5rem;"href="https://www.linkedin.com/in/shashank-kumar-2a4b2b87/"><i class="fa-brands fa-linkedin icon-large"></i></a>
+            <a style="padding:.5rem;"href="https://t.me/OpenSourcePundit"><i class="fa-brands fa-telegram "></i></a>
+        </div>
+    </footer>
 <script src="stockCheck.js"></script>
 </body>
 </html>

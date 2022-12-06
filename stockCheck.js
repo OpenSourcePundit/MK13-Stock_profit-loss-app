@@ -23,23 +23,25 @@ function findPercent(a,b){
 }
 
 function tellMe(){
+  
     if(input[0].value === input[2].value){
         output.innerHTML ="NO Pain NO Gain..!! NO GAIN..NO PAIN..!!";
     }
     else
 {
+   
     if(checkProfit(input[0].value,input[2].value)){
         var value = findValue(input[0].value,input[2].value,input[1].value);
         var percentage = findPercent(input[0].value,input[2].value);
-        output.innerHTML = "Profit|Absolute Profit: "+value+"|Profit percent: "+percentage;;
-    }
+        output.innerHTML = "  Profit  |Absolute Profit:  "+value+"  |Profit percent:   "+percentage+"%";
+     }
     else{
         const value = findValue(input[2].value,input[0].value,input[1].value);
         const percentage = findPercent(input[0].value,input[2].value);
-        output.innerHTML = "Loss|Absolute Loss: "+value+"|Loss percent: "+percentage;
-    }
-}
+        output.innerHTML = "  Loss  |Absolute Loss:   "+value+"  |Loss percent:   "+percentage+"%";
+     }
 
+}
 }
 
 tellMeBtn.addEventListener('click',tellMe);
